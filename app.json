@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Pickle Spots Reservations",
+    "slug": "psreservations",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "scheme": "psreservations",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.picklespots.reservations"
+    },
+    "android": {
+      "package": "com.picklespots.reservations",
+      "adaptiveIcon": {
+        "backgroundColor": "#D4EA3D",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro",
+      "name": "Pickle Spots Reservations",
+      "shortName": "Reservations",
+      "themeColor": "#0A8754",
+      "backgroundColor": "#EEF5E4"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

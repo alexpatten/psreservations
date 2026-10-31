@@ -1,0 +1,18 @@
+# Supabase settings for Pickle Spots Reservations. It shares the Pickle Spots project
+# (tyiviyefwgmlmzbzuzog); see the README for how its migrations are applied.
+project_id = "psreservations"
+
+# The public booking page checks the publishable key itself, and Stripe signs its webhook
+# calls instead of sending a Supabase JWT.
+[functions.public-booking]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false
+
+# Called with the secret key by Supabase Cron, and by Seam (signed with Svix).
+[functions.access-sync]
+verify_jwt = false
+
+[functions.seam-webhook]
+verify_jwt = false
